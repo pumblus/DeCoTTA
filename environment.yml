@@ -1,0 +1,19 @@
+name: decotta
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.24,<2.0
+  - scipy>=1.10
+  - pandas>=2.0
+  - pillow>=10.0
+  - nibabel>=5.0
+  - tqdm>=4.65
+  - pip
+  - pip:
+      - torch>=2.1
+      # Tested reference runtime: torch==2.7.1+cu126 on Python 3.12 (CUDA 12.6).
+      # For a specific CUDA wheel, run after activating the environment:
+      #   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu126
+      # Optional figure-plotting dependencies:
+      #   pip install -r requirements-figures.txt
